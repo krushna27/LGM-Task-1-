@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 138, 95);
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    position: sticky;
+    background-color: rgba(209, 198, 198, 0.8);
+}
+.leftmenu{
+   width: 20%;
+   line-height: 100px;
+   float: left;
+
+}
+.leftmenu h4{
+    padding-left: 70px;
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+    color:white;
+    font-family: monospace;
+}
+.leftmenu h4 span::before{
+    content: '';
+    animation: animate infinite 8s ease;
+}
+@keyframes animate{
+    0%{
+          content: 'cakeshop';
+          color: white;
+    }
+    20%{
+        content: 'chocolate';
+        color: orangered;
+    }
+    40%{
+        content: 'Fresh-Fruits';
+        color: white;
+    }
+    60%{
+      content: 'oreo-cake';
+      color: orangered;
+    }
+    80%{
+    content: 'strawberry';
+    color: white;
+    }
+    100%{
+    content: 'pineapple';
+    color: orangered;
+    }
+}
+
+.rightmenu{
+    width: 70%;
+    height: 100px;
+    float: right;
+ 
+}
+
+.rightmenu ul li{
+    font-family: monospace;
+    display: inline-block;
+    font-size: 25px;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+    margin-left: 40px;
+    text-transform: uppercase;
+
+}
+.rightmenu a{
+    text-decoration: none;
+    color: white;
+}
+.rightmenu ul{
+    margin-left:500px ;
+}
+  #firstlist{
+    color:tomato
+}
+.rightmenu li a:hover{
+    color: tomato;
+}
+/* --------------------/ home page /------------------------ */
+  
+
+.banner{
+    display: flex;
+    background-color:rgb(255, 138, 95);
+    height: 98vh;
+}
+  .leftcol ,.rightcol{
+    flex-basis: 50%;
+  }
+  .rightcol img{
+    width: 80%;
+    margin-top: 60px;
+  }
+  .leftcol{
+      width: 50%;
+  }
+  .leftcol h1{
+    font-size: 50px;
+    margin-top: 126px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 120px;
+  }
+  .leftcol p{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .leftcol span{
+    color:rgb(238, 86, 15);
+  }
+ /* ///////////////////////////////////////// */
+  .aboutsection{
+    height: 100vh;      
+    background-color: rgba(228, 219, 216, 0.856);
+  }
+.heading{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 80px;   
+    color:orangered;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-transform: uppercase;   
+}
+.deliverysec{
+    background-color:rgb(248, 64, 8);
+    height: 45vh;
+    width: 200vh;
+    margin-top: 100px;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+ }
+.deliverysec img{
+    margin-left: 10px;
+    width: 49%;
+    box-shadow: 0px 3px 20px black;
+} 
+.deliverysec img:hover{
+    transform: scale(1.04);
+}
+
+/* //////////////////////////////////////////////// */
+.cakeheading{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:  rgba(253, 29, 13, 0.795);
+}
+.cakegallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(39, 40, 41);
+}
+.cakegallery a{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 20px black;
+}
+.cakegallery a img:hover{
+    transform: scale(1.1);
+}
+/* ---------------------form --------------------------- */
+
+.contactsec{
+    background-color: whitesmoke;
+    height: 80vh;
+}
+.contactheading {
+    font-size: 25px;
+    color: rgb(241, 10, 10);
+    text-align: center;
+    text-transform: uppercase;
+}
+.contactheading h1{
+    padding-top: 20px;
+}
+.form{
+    max-width: 90px;
+    margin-left: 550px;
+    margin-top: 120px;
+}
+.form input{
+    font-size: 20px;
+    width: 450px;
+    padding: 10px;
+    margin-top: 20px;
+    border-color:orangered;
+    border-radius:8px;
+}
+.form button{
+    width: 80px;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px;
+    margin-top: 20px;
+    border-color:white;
+    box-shadow: 2px 6px 15px black;
+    color: white;
+    background-color: orangered;
+    border-radius:10px;
+    margin-left: 170px;
+}
+.footer{
+    background-color: orangered;
+    height: 5vh;
+    text-align: center;
+    font-size: 19px;
+    font-family:serif;
+}
+.footer span{
+    color: white;
+}
+
